@@ -8,12 +8,14 @@ sed -i 's/^ZSH_THEME=.*$/ZSH_THEME="avit"/' ~/.zshrc || echo 'ZSH_THEME="avit"' 
 wget https://github.com/zsh-users/zsh-syntax-highlighting/archive/master.zip \
     -O "zsh-syntax-highlighting.zip" \
     && unzip "zsh-syntax-highlighting.zip" \
+    && rm -r ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting \
     && mv "zsh-syntax-highlighting-master" ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting \
     && rm "zsh-syntax-highlighting.zip"
 
 wget https://github.com/zsh-users/zsh-autosuggestions/archive/master.zip \
     -O "zsh-autosuggestions.zip" \
     && unzip "zsh-autosuggestions.zip" \
+    && rm -r ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions \
     && mv "zsh-autosuggestions-master" ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions \
     && rm "zsh-autosuggestions.zip"
 
