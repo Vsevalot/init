@@ -20,4 +20,4 @@ wget https://github.com/zsh-users/zsh-autosuggestions/archive/master.zip \
 sed -i 's/^plugins=(.*)$/plugins=(git zsh-syntax-highlighting zsh-autosuggestions)/' ~/.zshrc || echo 'plugins=(git zsh-syntax-highlighting zsh-autosuggestions)' >> ~/.zshrc
 
 # Source .zshrc to apply the changes
-source ~/.zshrc
+. ~/.zshrc
